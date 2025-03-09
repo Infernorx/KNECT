@@ -31,6 +31,36 @@
 - 🤝 *Community Protection Programs*  
 
 ---
+## Website Navigation
+
+### 1. Home Page
+Upon entering the website, users can navigate through different sections:
+- **Features**
+- **FAQs**
+- **About Us**
+- **Chat Help** (AI-powered chatbot for instant support)
+
+### 2. User Sign-In
+Users can:
+- Sign in with email and password.
+- Register if they do not have an account.
+- Select categories like Education, Civil Rights, Healthcare, or Local Issues.
+- Submit their issues with a title, description, and file attachments.
+
+### 3. Volunteer Sign-In
+Volunteers can:
+- Register with their name, email, phone, and profession.
+- Sign in to access submitted issues.
+- Provide solutions to users' problems.
+
+## Contribution
+We welcome contributions! Follow these steps to contribute:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a Pull Request.
+
 
 ## 🚀 Get Involved  
 
