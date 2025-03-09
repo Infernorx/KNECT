@@ -113,7 +113,7 @@
     </main>
 
     <script type="module">
-        // Firebase configuration
+        
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
         import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
     
@@ -126,7 +126,7 @@
             appId: "1:7924433933:web:62c743bb0e51fdadb20144"
         };
     
-        // Initialize Firebase
+        
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
     
@@ -139,11 +139,11 @@
             const responseMessage = document.getElementById("responseMessage");
             const submitButton = document.getElementById("submitButton");
     
-            // Reset previous messages
+            
             responseMessage.textContent = "";
             responseMessage.style.color = "";
     
-            // Validate required fields
+            
             if (!issueType || !issueTitle || !issueDescription) {
                 responseMessage.textContent = "Please fill in all required fields.";
                 responseMessage.style.color = "red";
@@ -151,11 +151,11 @@
             }
     
             try {
-                // Disable button & show loading state
+                
                 submitButton.disabled = true;
                 submitButton.textContent = "Submitting...";
     
-                // Add data to Firestore
+    
                 await addDoc(collection(db, "issues"), {
                     issueType,
                     issueTitle,
@@ -166,7 +166,7 @@
                 responseMessage.textContent = "Issue submitted successfully!";
                 responseMessage.style.color = "green";
     
-                // Clear input fields
+                
                 document.getElementById("issueType").value = "";
                 document.getElementById("issueTitle").value = "";
                 document.getElementById("issueDescription").value = "";
@@ -177,7 +177,7 @@
                 responseMessage.textContent = "Error: " + error.message;
                 responseMessage.style.color = "red";
             } finally {
-                // Re-enable button
+                
                 submitButton.disabled = false;
                 submitButton.textContent = "Submit";
             }
